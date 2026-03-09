@@ -1,0 +1,17 @@
+def math_tutor(question):
+    if "addition" in question:
+        return "Addition means adding numbers together."
+    elif "subtraction" in question:
+        return "Subtraction means taking one number away from another."
+    elif "multiplication" in question:
+        return "Multiplication is repeated addition."
+    elif "division" in question:
+        return "Division means splitting into equal parts."
+    else:
+        return "Please ask a math related question."
+
+while True:
+    q = input("Ask me a math question: ")
+    if q.lower() == "exit":
+        break
+    print(math_tutor(q))

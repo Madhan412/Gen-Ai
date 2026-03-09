@@ -1,0 +1,24 @@
+!DOCTYPE html>
+<html>
+<head>
+<title>AI Math Tutor</title>
+</head>
+
+<body>
+<h2>AI Math Tutor</h2>
+
+<input type="text" id="question" placeholder="Enter math problem">
+<button onclick="solve()">Solve</button>
+
+<p id="result"></p>
+
+<script>
+function solve(){
+let q = document.getElementById("question").value;
+let result = eval(q);
+document.getElementById("result").innerHTML = "Answer: " + result;
+}
+</script>
+
+</body>
+</html>
